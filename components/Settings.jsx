@@ -6,9 +6,6 @@ module.exports = class Settings extends React.PureComponent {
 
 	constructor(props) {
 		super(props);
-		this.state = {
-			valueb: 123
-		};
 	}
 	render() {
 		const { getSetting, updateSetting, toggleSetting } = this.props;
