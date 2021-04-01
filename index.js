@@ -49,7 +49,6 @@ module.exports = class F8Fix extends Plugin {
 			if (F8fixEnabled) {
 				debugger;
 			}
-			if (keybind !== get('keybind')) keybind = get('keybind')
 		}
 	}
 };
