@@ -24,7 +24,6 @@ module.exports = class F8Fix extends Plugin {
 
 		const { get, set } = this.settings;
 		if (!get('keybind')) set('keybind', 'F8');
-		if (!get('CustomKeybind')) set('CustomKeybind', false);
 		keybind = get('keybind', 'F8');
 
     powercord.api.settings.registerSettings('f8fix-settings', {
@@ -49,11 +48,6 @@ module.exports = class F8Fix extends Plugin {
 			F8fixEnabled = !F8fixEnabled;
 			if (F8fixEnabled) {
 				debugger;
-			}
-
-			let CustomKeybind = "0";
-			if (get("CustomKeybind")) {
-				CustomKeybind = "100%";
 			}
 			if (keybind !== get('keybind')) keybind = get('keybind')
 		}
