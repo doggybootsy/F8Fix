@@ -40,17 +40,20 @@ module.exports = class F8Fix extends Plugin {
 
 	toggleF8fix(key) {
 
+		// if keybind gets changed
+		if (keybind !== get('keybind')) keybind = get('keybind')
+
+		
 		if (!document.hasFocus()) {
 			return;
 		}
+		
+		
 		if (key.key.toUpperCase() === keybind) {
 			F8fixEnabled = !F8fixEnabled;
 			if (F8fixEnabled) {
 				debugger;
 			}
 		}
-
-		// if keybind gets changed
-		if (keybind !== get('keybind')) keybind = get('keybind')
 	}
 };
