@@ -1,36 +1,32 @@
-#F8settings .upcoming {
-	text-align: center;
-	color: var(--text-normal);
-	font-weight: bold;
-}
-#F8settings .upcoming strong{
-	font-size: 2.5em;
-}
-#F8settings .upcoming p{
-	font-size: 1.25em;
-}
-.Bubfeat{
-	visibility: hidden;
-}
-.Keyplacement{
+#F8settings .banner{
+	color:var(--header-primary);
 	width:100%;
-	font-size:2em;
-	resize: none;
+	height:47px;
+	padding: 5px;
+	border-radius: 8px;
+	background: #faa61a;
+	margin-bottom: 10px;
 }
-#F8settings [role="radiogroup"] {
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(auto-fill,calc(50% - 10px));
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+#F8settings .banner:nth-child(2){
+	color:var(--header-primary);
+	width:60%;
+	height:37px;
+	padding: 5px;
+	border-radius: 8px;
+	background: #f04747;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
-#F8settings [role="radiogroup"]+.divider-3573oO{
-	display: none;
-}
-#F8settings .warning{
-	color:red;
+#F8settings .banner p{
+	bottom:7px;
 	position: relative;
-	top:-28px;
-	left:70px;
+	text-align: center;
+	font-size: 1.5em;
+}
+#F8settings .banner:nth-child(2) p{
+	bottom:8px;
+	position: relative;
+	text-align: center;
+	font-size: 1em;
 }
