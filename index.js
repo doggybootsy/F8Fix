@@ -33,8 +33,8 @@ module.exports = class F8Fix extends Plugin {
 
 	pluginWillUnload() {
 		document.body.removeEventListener("keyup", this.toggleF8fix);
-    uninject('F8Fix');
-    powercord.api.settings.unregisterSettings('f8fix-settings');
+    		uninject('F8Fix');
+    		powercord.api.settings.unregisterSettings('f8fix-settings');
 	}
 
 
