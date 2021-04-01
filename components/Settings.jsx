@@ -14,20 +14,20 @@ module.exports = class Settings extends React.PureComponent {
 		const { getSetting, updateSetting, toggleSetting } = this.props;
 		return (
 			<div id="F8settings">
-				<SwitchItem
-					value={getSetting('CustomKeybind')}
-					onChange={() => {
-						toggleSetting('CustomKeybind')
-					}}
-				>
-					Custom Keybind
-        		</SwitchItem>
+				<div>
+					<div class="banner">
+						<p>Still a work in progess</p>
+					</div>
+					<div class="banner">
+						<p>Changing the keybind needs a restart</p>
+					</div>
+				</div>
 					<KeybindRecorder value={getSetting('keybind', '6')}
 						onChange={(e) => {
 							this.setState({ value: e })
 							updateSetting('keybind', e)
 						}}
-						onReset={() => {
+					onReset={() => {
 							this.setState({ value: 'F8' })
 							updateSetting('keybind', 'F8')
 						}}
