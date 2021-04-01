@@ -2,8 +2,6 @@ const { Plugin } = require('powercord/entities');
 const { React, getModule } = require('powercord/webpack');
 const { inject, uninject } = require('powercord/injector');
 const { forceUpdateElement } = require('powercord/util');
-
-
 var F8fixEnabled = false;
 let keybind;
 
@@ -41,6 +39,7 @@ module.exports = class F8Fix extends Plugin {
 
 
 	toggleF8fix(key) {
+
 		if (!document.hasFocus()) {
 			return;
 		}
@@ -50,5 +49,8 @@ module.exports = class F8Fix extends Plugin {
 				debugger;
 			}
 		}
+
+		// if keybind gets changed
+		if (keybind !== get('keybind')) keybind = get('keybind')
 	}
 };
