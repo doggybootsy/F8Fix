@@ -8,7 +8,7 @@ let keybind;
 const Settings = require('./components/Settings');
 
 //Orignal -> https://github.com/kyza-vizality/f8-fix/commit/6bfb65f45868c043bdad9c4c2b8c3ad3640b6abd#diff-e727e4bdf3657fd1d798edcd6b099d6e092f8573cba266154583a746bba0f346
-//Orignal -> https://github.com/E-boi/Privacy-Tab/blob/master/Components/KeybindRecorder.jsx
+//Orignal -> https://github.com/E-boi/Privacy-Tab/blob/master/
 module.exports = class F8Fix extends Plugin {
 	constructor() {
 		super();
