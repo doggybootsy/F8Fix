@@ -1,0 +1,17 @@
+#F8settings #desc{
+    display: grid;
+    grid-template-columns: 65px 30px auto ;
+    grid-template-rows:  auto;
+    margin-bottom: 16px;
+}
+#F8settings #desc>p{
+    width: fit-content !important;
+    margin:0px;
+    color: var(--text-normal);
+}
+#F8settings #desc>strong{
+    color: rgb(255, 0, 0);
+}
+#F8settings .powercord-keybind-input{
+    color: var(--text-normal);
+}
