@@ -13,12 +13,11 @@ let keybind;
 module.exports = class F8Fix extends Plugin {
 	constructor() {
 		super();
+		this.toggle_F8fix = this.toggleF8fix.bind(this)
 	}
 
 	async startPlugin() {
-		this.loadStylesheet('./style.css');
-
-		document.body.addEventListener("keyup", this.toggleF8fix);
+		document.body.addEventListener("keyup", this.toggle_F8fix);
 
 		const { get, set } = this.settings;
 		if (!get('keybind')) set('keybind', 'F8');
@@ -32,13 +31,16 @@ module.exports = class F8Fix extends Plugin {
 	}
 
 	pluginWillUnload() {
-		document.body.removeEventListener("keyup", this.toggleF8fix);
+		document.body.removeEventListener("keyup", this.toggle_F8fix);
+		
     	uninject('F8Fix');
     	powercord.api.settings.unregisterSettings('f8fix-settings');
 	}
 
 
 	toggleF8fix(key) {
+		const { get } = this.settings
+		if (keybind !== get('keybind')) keybind = get('keybind');
 
 		if (!document.hasFocus()) {
 			return;
