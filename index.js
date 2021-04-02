@@ -17,6 +17,7 @@ module.exports = class F8Fix extends Plugin {
 	}
 
 	async startPlugin() {
+		this.loadStylesheet('./style.css');
 		document.body.addEventListener("keyup", this.toggle_F8fix);
 
 		const { get, set } = this.settings;
