@@ -5,7 +5,7 @@ WIP NOT FINISHED
 ### Built off of:
 https://github.com/kyza-vizality/f8-fix
 
-### thanks for the help
+### Thanks for the help
 [ugly-patootie#0611](https://github.com/userXinos)
 &
 [Xinos#2003](https://github.com/E-boi)
