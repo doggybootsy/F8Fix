@@ -7,27 +7,20 @@ module.exports = class Settings extends React.PureComponent {
 	constructor(props) {
 		super(props);
 	}
+
 	render() {
 		const { getSetting, updateSetting, toggleSetting } = this.props;
 		return (
 			<div id="F8settings">
-				<div>
-					<div class="banner">
-						<p>Still a work in progess</p>
-					</div>
-					<div class="banner">
-						<p>Changing the keybind needs a restart</p>
-					</div>
-				</div>
-				<KeybindRecorder value={getSetting('keybind', '6')}
-					onChange={(e) => {
-						this.setState({ value: e })
-						updateSetting('keybind', e)
-					}}
+					<KeybindRecorder value={getSetting('keybind', '8')}
+						onChange={(e) => {
+							this.setState({ value: e })
+							updateSetting('keybind', e)
+						}}
 					onReset={() => {
-						this.setState({ value: 'F8' })
-						updateSetting('keybind', 'F8')
-					}}
+							this.setState({ value: 'F8' })
+							updateSetting('keybind', 'F8')
+						}}
 					> Toggle Keybind
 				</KeybindRecorder>
 			</div>
