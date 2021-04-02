@@ -9,3 +9,6 @@ https://github.com/kyza-vizality/f8-fix
 [ugly-patootie#0611](https://github.com/userXinos)
 &
 [Xinos#2003](https://github.com/E-boi)
+
+### Installation
+`cd powercord/src/powercord/plugins && git clone https://github.com/doggybootsy/F8Fix/`
