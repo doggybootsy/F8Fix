@@ -9,9 +9,9 @@ Customizable plugin to fix the f8 problem
 https://github.com/kyza-vizality/f8-fix
 
 ### Thanks for the help
-[ugly-patootie#0611](https://github.com/userXinos)
+[ugly-patootie#0611](https://github.com/E-boi)
 &
-[Xinos#2003](https://github.com/E-boi)
+[Xinos#2003](https://github.com/userXinos)
 
 ### Installation
 `cd powercord/src/powercord/plugins && git clone https://github.com/doggybootsy/F8Fix/`
