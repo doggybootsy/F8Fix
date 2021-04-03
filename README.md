@@ -1,3 +1,7 @@
+<a href="https://www.codefactor.io/repository/github/doggybootsy/f8fix/overview/main"><img src="https://www.codefactor.io/repository/github/doggybootsy/f8fix/badge/main" alt="CodeFactor" /></a>
+![GitHub issues](https://img.shields.io/github/issues/doggybootsy/F8Fix?style=flat)
+![GitHub stars](https://img.shields.io/github/stars/doggybootsy/F8Fix?style=flat)
+
 # F8Fix
 Customizable plugin to fix the f8 problem
 
