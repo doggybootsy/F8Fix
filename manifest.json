@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Makes f8 work",
   "author": "doggybootsy#1333",
-  "license": "none"、
+  "license": "none",
   "permissions": [
         "keypresses"
   ]
